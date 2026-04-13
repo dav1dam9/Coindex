@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - Coindex</title>
+    <link rel="icon" type="image/png" href="favicon.ico"/>
+    
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .nav-link {
+            align-self: flex-start;
+            text-decoration: none;
+            color: #1e3c72;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor de Soporte */
+        .support-container {
+            background: white;
+            width: 100%;
+            max-width: 500px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .status-badge {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Formulario Simulado */
+        .contact-form {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box; /* Evita que el input se salga del contenedor */
+        }
+
+        .btn-send {
+            background-color: #1e3c72;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-send:hover {
+            background-color: #2a5298;
+        }
+
+        .whatsapp-link {
+            display: block;
+            margin-top: 20px;
+            color: #25d366;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <a class="nav-link" href="index.htm">← Inicio</a>
+    
+    <div class="support-container">
+        <span class="status-badge">● En línea 24/7</span>
+        <h1>Soporte</h1>
+        <p>Contamos con un equipo para brindarte ayuda las 24 horas del día.</p>
+        
+        <div class="contact-form">
+            <h2>Cuéntanos tus dudas</h2>
+            
+            <label for="email">Tu correo electrónico</label>
+            <input type="email" id="email" placeholder="ejemplo@correo.com">
+            
+            <label for="mensaje">¿En qué podemos ayudarte?</label>
+            <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+            
+            <button class="btn-send">Enviar consulta</button>
+        </div>
+
+        <a href="#" class="whatsapp-link">Chat directo por WhatsApp →</a>
+    </div>
+
+</body>
+</html>
